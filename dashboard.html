@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./asset/fontawesome-free-6.1.1-web/css/all.css">
+    <script>
+       
+        // if(lastMin +2 != Number(min)) {
+        //      location.href = './index.html';
+        // }
+      
+       
+
+        if(String(location.href) == 'file:///C:/Users/Ejike/Desktop/FOLDERS/login-ui/dashboard.html') {
+             let lastTime = JSON.parse(localStorage.getItem('lastTime'));
+            let lastMin = lastTime[0];
+             let lastHr = lastTime[1];
+              let lastDate = lastTime[2];
+        
+           
+            let { min, hr, today } = getTime();
+           
+            // console.log('lastmins is: ', Number(lastMin)+1);
+            
+            // let {min,hr,today} =getTime();
+            if(min==58) {
+                diff=1;
+            }
+            if(min==59) {
+                diff=2;
+            }
+           
+                if(lastDate.search(today) !== -1) {
+                    console.log('today..............');
+
+                    if(hr == Number(lastHr)) {
+                        console.log('the hr');
+
+                        // console.log('lastMin + 2 is: ', Number(lastMin)+2);
+                        if ((Number(lastMin)) < min) {
+                            console.log('user time has expired');
+
+                            // console.log('secure path');
+                            location.href = './index.html';
+                        }
+                        else {
+                            console.log('user can login');
+                            // localStorage.setItem('lastTime', String(hr + ":" + min + ":" + today));
+
+                        }
+                    }
+                    else{
+                        console.log('not the hr');
+                         location.href = './index.html';
+                    }
+
+                      
+
+
+                }
+                else{
+                    console.log('not today................');
+                      location.href = './index.html';
+                }
+              
+           
+           
+        }
+        else{
+             location.href = './index.html';
+        }
+
+
+        function getTime(){
+             let d = new Date();
+           let min= d.getMinutes();
+           let  hr= d.getHours();
+        let today =d.toDateString();
+       
+             return {hr,min,today};
+        }
+    </script>
+</head>
+<body class="dashboard-body">
+    <!-- section 1 -->
+    <div class="nav">
+        <div class="box one">
+            <span class="orange"><a href="#">jpa</a></span>
+            <span><a href="#">funiture</a></span>
+        </div>
+        <div class="box two">
+            <span><a href="./index.html" class="home">home</a></span>
+            <span><select name="" id="">
+                <option value="prodcuts">Products</option>
+                <option value="chairs">Chairs</option>
+                <option value="tables">Tables</option>
+                <option value="waldrop">Waldrop</option>
+            </select></span>
+            <span><a href="#" class="about">about</a></span>
+            <span><a href="#" class="contact">contact</a></span>
+        </div>
+        <div class="box three">
+            <i class="fa-solid fa-map-pin pin"></i>
+           <i class="fa-solid fa-user user"></i>
+          
+        </div>
+        <!-- user drop down -->
+        <div class="drop">
+            <h2>Your Profile </h2>
+            <h3 class="name"> </h3>
+            <h3 class="email"> </h3>
+            <h3 class="cart"></h3>
+            <h3 class="settings"></h3>
+        </div>
+    </div>
+    <div class="greeting">
+        <span class="fulna"></span>
+    </div>
+
+   <div class="container">
+    <!-- section 2 -->
+    <div class="section1">
+        <div class="box one">
+            <h1>help you to make modern forniture</h1>
+            <p>We help you to create and organize your room to be more cozy, design by professional interior <br> designer</p>
+            <button>See our Product</button>
+        </div>
+        <div class="box two">
+        
+        </div>
+        <div class="box three">
+            <span>
+                <i class="fa-solid fa-less-than"></i>
+                <i class="fa-solid fa-greater-than"></i>
+            </span>
+        </div>
+    </div>
+
+    <!-- section 2 -->
+    <div class="section2">
+        <h4>Some of our trusted company</h4>
+        <div class="company">
+            <span>Google</span>
+            <span class="microsoft"><span class="cube">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </span> Microsoft</span>
+            <span>tokopedia</span>
+            <span class="ticket"><span>ticket</span><span class="circle"> </span><span>com</span></span>
+        </div>
+    </div>
+    <!-- section 3 -->
+    <div class="section3">
+        <div class="box one">
+            <h3>Some of the interiors that we <br> provide for you</h3>
+            <div class="img"></div>
+            <div class="shadow"></div>
+            <span class="next">
+                <i class="fa-solid fa-less-than"></i>
+                <i class="fa-solid fa-greater-than"></i>
+            </span>
+        </div>
+        <div class="box two">
+            <div class="hori living">
+                <div class="img"></div>
+                <div class="disc">
+                    <h3>Living Room</h3>
+                    <p>As one of the most frequented spots in the home <br> a living room sets the tone for the rest <br> of the house</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="hori bed">
+                <div class="img"></div>
+                <div class="disc">
+                    <h3>Bedroom</h3>
+                    <p>Unleash your creativity to make not only <br> comfortable but also a pleasant place to <br>start and end your day</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="hori office">
+                <div class="img"></div>
+                <div class="disc">
+                    <h3>Office</h3>
+                    <p>The home office designed ideas featured here <br> are maximized for efficiency, optimized for <br> space, and imporovised for comfort by <br> spacejoy desingers</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+           
+        </div>
+        <span class="all">See all</span>
+    </div>
+    <!-- section 4 -->
+    <div class="section4">
+        <h2>Products</h2>
+        <div class="card">
+            <div class="box img1">
+                <span class="alt"><span>Chair</span> <i class="fa-solid fa-cart-plus"></i> </span>
+                <div class="category">
+                    <span>Glossy Cube</span>
+                    <span class="icon"></span>
+                </div>
+                <span class="price">$ 4000.00</span>
+            </div>
+            <div class="box img2">
+            <span class="alt"><span>Light</span> <i class="fa-solid fa-cart-plus"></i> </span>
+                <div class="category">
+                    <span>Floor MonoLamp</span>
+                    <span class="icon"></span>
+
+                </div>
+                <span class="price">$ 4000.00</span>
+            </div>
+            <div class="box img3">
+            <span class="alt"><span>Chair</span> <i class="fa-solid fa-cart-plus"></i> </span>
+                <div class="category">
+                    <span>Vintage Chair</span>
+                    <span class="icon"></span>
+                </div>
+                <span class="price">$ 4000.00</span>
+            </div>
+            <div class="box img4">
+            <span class="alt"><span>Bed</span> <i class="fa-solid fa-cart-plus"></i> </span>
+                <div class="category">
+                    <span>Comport Ling Bed</span>
+                    <span class="icon"></span>
+                </div>
+                <span class="price">$ 4000.00</span>
+            </div>
+        </div>
+    </div>
+
+    
+   </div>
+    <!-- secttion 5 -->
+    <div class="footer">
+       
+        <div class="container">
+            <div class="box1">
+                <div class="item1">
+                  <h1>subcribe to get the last <br>news about us</h1>
+                  <p>Recommended you to subcribe to our newspaper, enter <br> your email to get our daily update about us</p>
+                </div>
+                <div class="item2">
+                    <div class="input">
+                        <form >
+                            <input type="text" placeholder="Enter your email address">
+                            <button>Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="box2">
+                <div class="item">
+                    <h3>PT. LOREM EPLUM JAYA</h3>
+                    <h5>&copy; 2020 ALL RIGHT RESERVED</h5>
+                </div>
+                <div class="item">
+                    <a href="#">About Us</a>
+                </div>
+                <div class="item">
+                    <a href="#">Partnership</a>
+                </div>
+                <div class="item">
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="./dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,732 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.login-body {
+  background-color: #b0d8da;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.login-body .input-style {
+  display: flex;
+  flex-direction: column;
+}
+.login-body .signup {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.login-body .signup .one {
+  position: relative;
+  padding: 1rem;
+  color: white;
+}
+.login-body .signup .one .intro {
+  margin-top: 7rem;
+}
+.login-body .signup .one .intro h1 {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: center;
+}
+.login-body .signup .one .intro h4 {
+  margin-top: 2rem;
+  font-size: 1.57rem;
+  font-weight: bold;
+  color: rgba(4, 4, 132, 0.5);
+  text-align: center;
+}
+.login-body .signup .one .img {
+  position: absolute;
+  bottom: 50px;
+  right: -160px;
+  width: 100%;
+  height: 40vh;
+  background-image: url("./img/locked-eUylMgtuv-transformed.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center right;
+}
+.login-body .signup .two {
+  background-color: white;
+  height: 100vh;
+  border-radius: 50px 0px 0px 50px;
+}
+.login-body .signup .two form {
+  margin: 2rem 1rem 1rem 6rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.login-body .signup .two form h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.login-body .signup .two form .form-inputs {
+  width: 100%;
+  margin: 2rem 1rem 1rem 6rem;
+}
+.login-body .signup .two form .form-inputs input {
+  margin: 0.5rem 0rem;
+  width: 75%;
+  height: 2.5rem;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgba(19, 18, 18, 0.5);
+}
+.login-body .signup .two form .form-inputs .pw-inp {
+  width: 70%;
+}
+.login-body .signup .two form .form-inputs #eye {
+  border-bottom: 2px solid rgba(19, 18, 18, 0.5);
+  height: 2.4rem;
+  padding: 0.5rem;
+  margin-left: -4px;
+  width: 5%;
+  color: rgba(11, 11, 11, 0.5);
+}
+.login-body .signup .two form .form-inputs .send {
+  margin-top: 1rem;
+}
+.login-body .signup .two form .form-inputs .send button {
+  background-color: rgba(6, 6, 248, 0.8);
+  color: white;
+  width: 75%;
+  text-align: center;
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+.login-body .signup .two form .form-inputs .exist {
+  margin-top: 1rem;
+}
+.login-body .signup .two form .form-inputs .exist a {
+  color: blue;
+  text-decoration: none;
+}
+
+.signup-body {
+  background-color: #b0d8da;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.signup-body .signup {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.signup-body .signup .one {
+  position: relative;
+  padding: 1rem;
+  color: white;
+}
+.signup-body .signup .one .intro {
+  margin-top: 7rem;
+}
+.signup-body .signup .one .intro h1 {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: center;
+}
+.signup-body .signup .one .intro h4 {
+  margin-top: 2rem;
+  font-size: 1.57rem;
+  font-weight: bold;
+  color: rgba(4, 4, 132, 0.5);
+  text-align: center;
+}
+.signup-body .signup .one .img {
+  position: absolute;
+  bottom: 50px;
+  right: -180px;
+  width: 100%;
+  height: 25vh;
+  background-image: url("./img/smartphone-wR42ZQsL4-transformed.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center right;
+}
+.signup-body .signup .two {
+  background-color: white;
+  height: 100vh;
+  border-radius: 50px 0px 0px 50px;
+  width: 100%;
+}
+.signup-body .signup .two form {
+  margin: 2rem 0rem 1rem 6rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.signup-body .signup .two form h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.signup-body .signup .two form .create-with {
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+.signup-body .signup .two form .create-with span {
+  border: 1px solid rgba(13, 13, 13, 0.5);
+  padding: 0.5rem 1.5rem;
+}
+.signup-body .signup .two form .create-with span:hover {
+  cursor: pointer;
+}
+.signup-body .signup .two form .create-with span .google {
+  background-image: url("./img/google_icon.png");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center center;
+  width: 20px;
+  height: 20px;
+  border: none;
+}
+.signup-body .signup .two form .create-with span .facebook {
+  background-image: url("./img/facebook_icon-transformed.png");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center center;
+  width: 20px;
+  height: 20px;
+  border: none;
+}
+.signup-body .signup .two form .create-with p {
+  margin-top: 2rem;
+  color: rgba(21, 21, 21, 0.3);
+  text-align: center;
+}
+.signup-body .signup .two form .form-inputs {
+  width: 100%;
+  margin: 2rem 1rem 1rem 11rem;
+}
+.signup-body .signup .two form .form-inputs input {
+  margin: 0.5rem 0rem;
+  width: 75%;
+  height: 2.5rem;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgba(19, 18, 18, 0.5);
+}
+.signup-body .signup .two form .form-inputs .pw-inp {
+  width: 70%;
+}
+.signup-body .signup .two form .form-inputs #eye {
+  border-bottom: 2px solid rgba(19, 18, 18, 0.5);
+  height: 2.4rem;
+  padding: 0.5rem;
+  margin-left: -4px;
+  width: 5%;
+  color: rgba(11, 11, 11, 0.5);
+}
+.signup-body .signup .two form .form-inputs .send {
+  margin-top: 1rem;
+}
+.signup-body .signup .two form .form-inputs .send button {
+  background-color: rgba(6, 6, 248, 0.8);
+  color: white;
+  width: 75%;
+  text-align: center;
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+.signup-body .signup .two form .form-inputs .exist {
+  margin-top: 1rem;
+}
+.signup-body .signup .two form .form-inputs .exist a {
+  color: blue;
+  text-decoration: none;
+}
+
+.dashboard-body {
+  background-color: rgba(255, 245, 238, 0.1);
+}
+.dashboard-body .container {
+  margin: 0.5rem 5%;
+  padding: 0.5rem;
+}
+.dashboard-body .nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  padding: 1rem 1.2rem;
+}
+.dashboard-body .nav a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+}
+.dashboard-body .nav .one span {
+  font-size: 2rem;
+}
+.dashboard-body .nav .one span a {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.dashboard-body .nav .one .orange a {
+  text-transform: uppercase;
+}
+.dashboard-body .nav .two span {
+  margin-right: 0.5rem;
+}
+.dashboard-body .nav .two span a {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.dashboard-body .nav .two span select {
+  outline: none;
+  border: none;
+  z-index: 4;
+}
+.dashboard-body .nav .three .pin {
+  margin-right: 1rem;
+  transform: rotate(-30deg);
+  color: black;
+}
+.dashboard-body .nav .drop {
+  display: none;
+  position: absolute;
+  z-index: 4;
+  top: 4rem;
+  right: 0.5rem;
+  width: 370px;
+  height: 200px;
+  background-color: rgb(255, 237, 213);
+  text-align: left;
+  padding: 1rem 2rem;
+  border-radius: 29px;
+  box-shadow: 1px 1px 3px rgb(255, 237, 213);
+  color: blue;
+  font-size: 0.9rem;
+  border-right: 2px solid red;
+}
+.dashboard-body .nav .drop h3 {
+  margin-bottom: 0.5rem;
+  border-right: 3px solid green;
+}
+.dashboard-body .nav .drop h3:hover {
+  background-color: rgba(0, 0, 255, 0.2);
+  padding: 0.4rem 1rem;
+  color: green;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.dashboard-body .nav .drop h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.dashboard-body .section1 {
+  padding: 0.5rem;
+  height: 70vh;
+  position: relative;
+}
+.dashboard-body .section1 .three {
+  background-image: url("./img/images-30.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 60%;
+  height: 60vh;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 10px;
+  z-index: 2;
+}
+.dashboard-body .section1 .three span {
+  position: absolute;
+  bottom: -20px;
+  left: 50px;
+}
+.dashboard-body .section1 .three span i {
+  background-color: rgb(247, 245, 246);
+  margin-right: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.dashboard-body .section1 .two {
+  background-color: rgb(255, 237, 213);
+  width: 60%;
+  height: 60vh;
+  position: absolute;
+  top: 8vh;
+  right: 10%;
+  z-index: 1;
+  box-shadow: -5px 5px 5px white;
+}
+.dashboard-body .section1 .one {
+  position: absolute;
+  top: 5vh;
+  left: 0px;
+  z-index: 3;
+  width: 50%;
+  height: 50vh;
+  background-color: rgba(229, 227, 228, 0.7);
+  backdrop-filter: blur(3px);
+  border-radius: 25px;
+  padding: 1rem;
+  overflow: hidden;
+}
+.dashboard-body .section1 .one h1 {
+  width: 70%;
+  color: orange;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.dashboard-body .section1 .one p {
+  width: 90%;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.dashboard-body .section1 .one button {
+  margin-top: 1rem;
+  background-color: orange;
+  color: white;
+  text-transform: capitalize;
+  padding: 0.5rem 1.3rem;
+  font-size: 1.3rem;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.dashboard-body .section2 {
+  margin-top: 2rem;
+}
+.dashboard-body .section2 h4 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.dashboard-body .section2 .company {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  padding: 0.5rem 3rem;
+  font-size: 2rem;
+}
+.dashboard-body .section2 .company .microsoft {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.dashboard-body .section2 .company .microsoft .cube {
+  display: flex;
+  align-content: center;
+  justify-content: 10px;
+  align-self: center;
+  gap: 0.1rem;
+  width: 30px;
+  flex-wrap: wrap;
+}
+.dashboard-body .section2 .company .microsoft .cube span {
+  width: 10px;
+  height: 10px;
+}
+.dashboard-body .section2 .company .microsoft .cube :nth-child(1) {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.dashboard-body .section2 .company .microsoft .cube :nth-child(2) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.dashboard-body .section2 .company .microsoft .cube :nth-child(3) {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.dashboard-body .section2 .company .microsoft .cube :nth-child(4) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.dashboard-body .section2 .company .ticket {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.dashboard-body .section2 .company .ticket .circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0.5px;
+  align-self: center;
+}
+.dashboard-body .section3 {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  height: 90vh;
+  position: relative;
+  padding: 1rem;
+}
+.dashboard-body .section3 .box {
+  width: 49%;
+  height: 79vh;
+}
+.dashboard-body .section3 .one {
+  position: relative;
+}
+.dashboard-body .section3 .one h3 {
+  font-size: 1.6rem;
+}
+.dashboard-body .section3 .one .img {
+  background-image: url("./img/images-29.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 90%;
+  height: 50vh;
+  position: absolute;
+  top: 15vh;
+  z-index: 2;
+  border-radius: 10px;
+}
+.dashboard-body .section3 .one .shadow {
+  width: 90%;
+  height: 50vh;
+  position: absolute;
+  top: 20vh;
+  right: 20px;
+  background-color: rgb(255, 237, 213);
+  z-index: 1;
+}
+.dashboard-body .section3 .one .next {
+  position: absolute;
+  bottom: 33px;
+  right: 50px;
+  z-index: 3;
+}
+.dashboard-body .section3 .one .next i {
+  background-color: rgb(247, 245, 246);
+  margin-right: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.dashboard-body .section3 .two {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.dashboard-body .section3 .two .hori {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.dashboard-body .section3 .two .hori .img {
+  width: 40%;
+  height: 20vh;
+  border-radius: 10px;
+}
+.dashboard-body .section3 .two .hori .disc {
+  width: 58%;
+  height: 25vh;
+}
+.dashboard-body .section3 .two .hori .disc p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  width: 99%;
+}
+.dashboard-body .section3 .two .hori .disc button {
+  margin-top: 2rem;
+  outline: none;
+  border: none;
+  background-color: inherit;
+}
+.dashboard-body .section3 .two .living .img {
+  background-image: url("./img/images-30.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.dashboard-body .section3 .two .bed .img {
+  background-image: url("./img/images-29.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.dashboard-body .section3 .two .office .img {
+  background-image: url("./img/images-30.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.dashboard-body .section3 span.all {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+.dashboard-body .section4 {
+  margin-top: 0.5rem;
+  position: relative;
+}
+.dashboard-body .section4 .card {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  position: relative;
+}
+.dashboard-body .section4 .card .img1 {
+  background-image: url("./img/bluechair-transformed.png");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.dashboard-body .section4 .card .img2 {
+  background-image: url("./img/floorlamp-transformed.png");
+  background-size: 90% 80%;
+  background-repeat: no-repeat;
+  background-position: 60px;
+}
+.dashboard-body .section4 .card .img3 {
+  background-image: url("./img/woodchair-transformed.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.dashboard-body .section4 .card .img4 {
+  background-image: url("./img/bed.png");
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: right 60%;
+}
+.dashboard-body .section4 .card .box {
+  background-color: rgb(255, 237, 213);
+  gap: 2rem;
+  width: 23%;
+  height: 50vh;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.dashboard-body .section4 .card .box .alt {
+  margin-top: 15px;
+  color: orange;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.dashboard-body .section4 .card .box .category {
+  position: absolute;
+  top: 10vh;
+}
+.dashboard-body .section4 .card .box .price {
+  position: absolute;
+  bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(2px);
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+}
+.dashboard-body .footer {
+  background-color: rgb(223, 180, 125);
+  width: 100%;
+  height: 60vh;
+  margin-top: 3rem;
+  color: white;
+}
+.dashboard-body .footer hr {
+  background-color: white;
+  height: 0.2vh;
+  outline: none;
+  border: none;
+}
+.dashboard-body .footer .box1 {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 40vh;
+  padding: 3rem 0rem;
+}
+.dashboard-body .footer .box1 .item1 {
+  width: 50%;
+}
+.dashboard-body .footer .box1 .item1 h1 {
+  text-transform: uppercase;
+}
+.dashboard-body .footer .box1 .item1 p {
+  margin-top: 1rem;
+}
+.dashboard-body .footer .box1 .item2 {
+  width: 50%;
+}
+.dashboard-body .footer .box1 .item2 .input form {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 10vh;
+  padding: 0.6rem 0.2rem 0.6rem 2rem;
+  width: 80%;
+  margin-left: 20%;
+  border-radius: 4px;
+}
+.dashboard-body .footer .box1 .item2 .input form input {
+  border: none;
+  outline: none;
+  height: 50px;
+}
+.dashboard-body .footer .box1 .item2 .input form button {
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 150px;
+  background-color: orange;
+  color: white;
+  border-radius: 12px;
+  font-size: 1.3rem;
+}
+.dashboard-body .footer .box2 {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0rem 3rem 0rem;
+}
+.dashboard-body .footer .box2 a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.dashboard-body .greeting {
+  background-color: rgb(255, 237, 213);
+  color: blue;
+  margin-left: 2rem;
+  padding: 0.7rem 1rem;
+  width: 35%;
+  border-radius: 15px;
+  box-shadow: 5px -6px 1px blue;
+}
+.dashboard-body .greeting span {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=main.css.map */
